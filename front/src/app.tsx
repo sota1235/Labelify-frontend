@@ -4,6 +4,8 @@ import * as React from 'react';
 import LeftNavBar from './components/LeftNavBar';
 import MainTop from './components/MainTop';
 
+const LEFT_NAV_WIDTH = 256;
+
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
@@ -13,8 +15,8 @@ const theme = createMuiTheme({
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-      <LeftNavBar/>
-      <MainTop/>
+      <LeftNavBar width={LEFT_NAV_WIDTH}/>
+      <MainTop paddingLeft={LEFT_NAV_WIDTH}/>
     </MuiThemeProvider>
   );
 }

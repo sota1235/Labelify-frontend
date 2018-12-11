@@ -2,8 +2,12 @@ import * as React from 'react';
 import Drawer from '@material-ui/core/Drawer';
 import LeftNavList from './LeftNavList';
 
-const LeftNavBar = () => (
-  <Drawer open={true}>
+interface LeftNavBarProps {
+  width: number,
+}
+
+const LeftNavBar = ({ width }: LeftNavBarProps) => (
+  <Drawer open={true} style={{width}}>
     <LeftNavList/>
   </Drawer>
 );
