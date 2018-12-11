@@ -7,8 +7,9 @@
   "scripts": {
     "start": "npx parcel public/index.html",
     "build": "npx parcel build public/index.html",
-    "fix": "npm run lint --fix && prettier --write ./src/**/*.ts",
-    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "fix": "npm run tslint --fix && prettier --write ./src/**/*.ts",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint": "npm run tslint && prettier -l ./src/**/*.ts",
     "test": "jest",
     "test:ci": "jest -c ./jest.config.ci.js"
   },
