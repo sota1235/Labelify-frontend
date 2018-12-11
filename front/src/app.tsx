@@ -5,7 +5,7 @@ import LeftNavBar from './components/LeftNavBar';
 import MainTop from './components/MainTop';
 import BottomBar from './components/BottomBar';
 
-const LEFT_NAV_WIDTH = 256;
+const LEFT_NAV_WIDTH = 200;
 
 const theme = createMuiTheme({
   typography: {
