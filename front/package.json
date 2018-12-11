@@ -5,7 +5,7 @@
   "description": "Labelify Frontend",
   "main": "index.js",
   "scripts": {
-    "fix": "prettier --write ./src/**/*.ts",
+    "fix": "npm run lint --fix && prettier --write ./src/**/*.ts",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,10 +13,24 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
     "parcel-bundler": "^1.10.3",
     "prettier": "^1.15.3",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run fix",
+      "npm run lint",
+      "git add"
+    ]
   }
 }
