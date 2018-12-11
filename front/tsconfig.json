@@ -2,16 +2,16 @@
   "compilerOptions": {
     "target": "ESNEXT",
     "module": "commonjs",
-    "declaration": true,
+    "declaration": false,
     "removeComments": true,
     "strict": true,
+    "jsx": "react",
 
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true,
-    "outDir": "./lib"
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*"
