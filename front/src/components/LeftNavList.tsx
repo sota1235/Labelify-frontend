@@ -29,7 +29,7 @@ const LeftNavList = () => (
   <List component="nav">
     {
       sideBarItems.map((sideBarItem: SideBarItem) => (
-        <ListItem button>
+        <ListItem button key={sideBarItem.text}>
           <ListItemIcon>
             {sideBarItem.icon}
           </ListItemIcon>
