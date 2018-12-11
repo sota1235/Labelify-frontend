@@ -9,7 +9,7 @@ const style: React.CSSProperties = {
 };
 
 const BottomBar = () => (
-  <AppBar position="fixed" style={style}>
+  <AppBar position="fixed" style={style} elevation={20}>
   </AppBar>
 );
 

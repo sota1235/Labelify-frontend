@@ -7,7 +7,7 @@ interface LeftNavBarProps {
 }
 
 const LeftNavBar = ({ width }: LeftNavBarProps) => (
-  <Drawer open={true} style={{width}} PaperProps={{style: {width}}}>
+  <Drawer open={true} style={{width}} PaperProps={{elevation: 10, style: {width}}}>
     <LeftNavList/>
   </Drawer>
 );
