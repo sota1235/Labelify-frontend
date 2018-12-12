@@ -4,8 +4,10 @@ import * as React from 'react';
 import LeftNavBar from './components/LeftNavBar';
 import MainTop from './components/MainTop';
 import BottomBar from './components/BottomBar';
+import NowPlayingCard from './components/NowPlayingCard';
 
 const LEFT_NAV_WIDTH = 200;
+const BOTTOM_HEIGHT = 70;
 
 const theme = createMuiTheme({
   typography: {
@@ -18,7 +20,8 @@ function App() {
     <MuiThemeProvider theme={theme}>
       <LeftNavBar width={LEFT_NAV_WIDTH}/>
       <MainTop paddingLeft={LEFT_NAV_WIDTH}/>
-      <BottomBar/>
+      <NowPlayingCard height={BOTTOM_HEIGHT} image={'https://learn.getgrav.org/user/pages/11.troubleshooting/01.page-not-found/error-404.png'} title={'title'}/>
+      <BottomBar height={BOTTOM_HEIGHT}/>
     </MuiThemeProvider>
   );
 }
