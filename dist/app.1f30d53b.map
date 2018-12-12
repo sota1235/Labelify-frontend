@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.ts","app.js"],"names":[],"mappings":";AAAA,aAAA,QAAQ,IAAI;;ACAZ,aAAA,QAAA","file":"app.1f30d53b.map","sourceRoot":"../public","sourcesContent":["console.log('hello, world');\n","import '../src/index.ts';\n"]}
